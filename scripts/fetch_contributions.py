@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 def get_username():
     if len(sys.argv) > 1:
         return sys.argv[1]
-    env = os.environ.get(hexon1) or os.environ.get(hexon1)
+    env = os.environ.get(hex0n1) or os.environ.get(hex0n1)
     if env:
         return env
     raise SystemExit(
@@ -28,7 +28,7 @@ def get_username():
 
 
 def fetch_calendar_html(username):
-    url = f"https://github.com/users/hexon1/contributions"
+    url = f"https://github.com/users/hex0n1/contributions"
     resp = requests.get(
         url,
         headers={"User-Agent": "Mozilla/5.0 (profile-readme-heatmap-script)"},
